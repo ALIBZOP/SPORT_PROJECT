@@ -1,13 +1,10 @@
 import React from 'react'
 import Image from "next/image" 
 import {Tabs, Tab, Styled, Link, Button, Card, CardBody, CardHeader} from "@nextui-org/react";
-import LoginImageBaner from "../../assets/login/login-image-baner.png"
 import LoginForm from "./LoginForm/LoginForm.jsx"
 import RegisterForm from "./RegisterForm/RegisterForm.jsx"
-import LoginFormCard from "../../ui/NextUi/LoginFormCard.jsx"
 
 function loginPage() {
-      const [selected, setSelected] = React.useState("login");
 
   return (
     <>
@@ -42,7 +39,6 @@ function loginPage() {
             </div>
             <div className="flex justify-center bg-[#66B10B]/20 items-center h-[606px] w-[688px] overflow-hidden">
                 <Image
-                    src={LoginImageBaner}
                     alt="Picture of the author"
                     className="w-[530px] mb-[60px]"
                 />

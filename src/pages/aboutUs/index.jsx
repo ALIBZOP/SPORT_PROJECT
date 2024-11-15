@@ -1,14 +1,6 @@
 import Image from "next/image" 
-import Header from "../../components/Header/Header"
-import Footer from "../../components/Footer/Footer"
-import Headphone from "../../assets/aboutUs/Headphones_fill.png"
-import Pin from "../../assets/aboutUs/pin.png"
-import Chield from "../../assets/aboutUs/Chield_check.png"
-import card from "../../assets/aboutUs/Credit card.png"
-import ImageMain1 from "../../assets/aboutUs/image-about-1.png"
-import ImageMain2 from "../../assets/aboutUs/image-about-2.png"
-import ImageMain3 from "../../assets/aboutUs/image-about-3.png"
-import ImageMain4 from "../../assets/aboutUs/image-about-4.png"
+import Header from "../../components/Header/Header.tsx"
+import Footer from "../../components/Footer/Footer.tsx"
 
 function about() {
   return (
@@ -23,7 +15,7 @@ function about() {
             border-[#ffffff] p-8 border-2 w-[1200px] h-[150px] rounded-3xl shadow-md z-10">
               <div className="flex flex-col gap-8 items-center">
                 <Image
-                  src={Headphone}
+                  src="/path-to-your-image.jpg" 
                   width={36}
                   height={26}
                   alt="Picture of the author"
@@ -32,7 +24,7 @@ function about() {
               </div>
               <div className="flex flex-col gap-8 items-center">
                   <Image
-                    src={Pin}
+                    src="/path-to-your-image.jpg" 
                     width={36}
                     height={26}
                     alt="Picture of the author"
@@ -41,7 +33,7 @@ function about() {
               </div>
               <div className="flex flex-col gap-8 items-center">
                   <Image
-                    src={Chield}
+                    src="/path-to-your-image.jpg" 
                     width={36}
                     height={26}
                     alt="Picture of the author"
@@ -50,7 +42,7 @@ function about() {
               </div>
               <div className="flex flex-col gap-8 items-center">
                   <Image
-                    src={card}
+                    src="/path-to-your-image.jpg" 
                     width={36}
                     height={26}
                     alt="Picture of the author"
@@ -78,7 +70,7 @@ function about() {
               <div className="flex flex-col gap-6"> 
                 <div>
                   <Image 
-                    src={ImageMain1}
+                    src="/path-to-your-image.jpg" 
                     width={220}
                     height={285}
                     alt="Picture of the author"
@@ -86,7 +78,7 @@ function about() {
                 </div>
                 <div>
                 <Image 
-                  src={ImageMain3}
+                  src="/path-to-your-image.jpg" 
                   width={220}
                   height={285}
                   alt="Picture of the author"
@@ -96,7 +88,7 @@ function about() {
             <div className="flex flex-col absolute right-[228px] top-[50px] gap-6">
                 <div>
                   <Image 
-                  src={ImageMain2}
+                  src="/path-to-your-image.jpg" 
                   width={220}
                   height={285}
                   alt="Picture of the author"
@@ -104,7 +96,7 @@ function about() {
                 </div>
                 <div>
                   <Image 
-                    src={ImageMain4}
+                    src="/path-to-your-image.jpg" 
                     width={220}
                     height={285}
                     alt="Picture of the author"

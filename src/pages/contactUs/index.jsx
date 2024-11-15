@@ -1,14 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useForm } from 'react-hook-form';
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import mapImage from "../../assets/contactUs/map-image.png";
-import PhoneImage from "../../assets/contactUs/Vector 189.png";
-import MessageImage from "../../assets/contactUs/Message_alt_fill.png";
-import TelegramImage from "../../assets/contactUs/Telegram.png";
+import Header from "../../components/Header/Header.tsx";
+import Footer from "../../components/Footer/Footer.tsx";
 
 function ContactUs() {
+  
   const { register, handleSubmit, formState: { isValid } } = useForm({
     mode: 'onChange'
   });
@@ -98,7 +95,7 @@ function ContactUs() {
               <div>
                 <Link href="/">
                   <Image
-                    src={mapImage}
+                    src="/path-to-your-image.jpg" 
                     width={572}
                     height={356}
                     alt="Map"
@@ -109,7 +106,7 @@ function ContactUs() {
                 <div className="flex flex-row w-[526px] h-[74px] bg-[#E6E6E6]/30 px-4 py-3 rounded-lg gap-4">
                   <div className="flex relative bg-[#66B10B]/30 p-1 w-[40px] h-[40px] items-center rounded-full">
                     <Image
-                      src={PhoneImage}
+                      src="/path-to-your-image.jpg" 
                       width={22}
                       height={22}
                       alt="Phone"
@@ -121,7 +118,7 @@ function ContactUs() {
                 <div className="flex flex-row w-[526px] h-[74px] bg-[#E6E6E6]/30 px-4 py-3 rounded-lg gap-4">
                   <div className="flex relative bg-[#66B10B]/30 p-1 w-[40px] h-[40px] items-center rounded-full">
                     <Image
-                      src={MessageImage}
+                      src="/path-to-your-image.jpg" 
                       width={25}
                       height={20}
                       alt="Message"
@@ -133,7 +130,7 @@ function ContactUs() {
                 <div className="flex flex-row items-center w-[526px] h-[74px] bg-[#E6E6E6]/30 px-4 py-3 rounded-lg gap-4">
                   <div className="flex relative bg-[#66B10B]/30 p-1 w-[40px] h-[40px] items-center rounded-full">
                     <Image
-                      src={TelegramImage}
+                      src="/path-to-your-image.jpg" 
                       width={30}
                       height={20}
                       alt="Telegram"

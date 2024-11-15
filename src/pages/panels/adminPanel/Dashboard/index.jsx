@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SidebarDashboardAdmin from '../SidebarDashboard/SidebarDashboard';
 import iconImage from "../../../../assets/adminpanel/icon-image.png";
-import Expand from '../../../../assets/adminPanel/Expand_left.png';
 import ReservationTable from "./ReservationTable";
 import UserTable from "./UserTable";
 
@@ -28,7 +27,6 @@ function Dashboard() {
                     <div className="flex flex-row gap-2">
                       <div className="flex">
                         <Image
-                          src={item.icon}
                           width={50}
                           height={50}
                           alt="icon"
@@ -56,7 +54,6 @@ function Dashboard() {
                 <Link href="" className="flex flex-row text-blue-600 gap-2">
                   مشاهده همه
                   <Image
-                    src={Expand}
                     width={20}
                     alt="Expand icon"
                   />

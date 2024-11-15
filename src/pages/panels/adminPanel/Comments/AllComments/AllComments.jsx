@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from "next/image";
 import commentImage from "../../../../../assets/CommentsPage/comment-image.png"
-import Close from "../../../../../assets/adminpanel/Close.png"
-import thumb from "../../../../../assets/adminpanel/thumb_up.png"
 
 const DataComments= [
     {id: 1, image: commentImage, name: "غلامرضا", hour: "۱۲.۳۶AM", date: "۱۴۰۳/۰۸/۱۳", comments: "واقعا سالن تمیز و بزرگی بود و م چی عالی بود ممنون از خدمات خوبتون" },
@@ -21,7 +19,6 @@ function AllComments() {
                 <div className="flex flex-row gap-2">
                     <div>
                         <Image
-                            src={item.image}
                             width={56}
                             height={26}
                             alt="Picture of the author"
@@ -44,7 +41,6 @@ function AllComments() {
                            <p className="text-[10px]">پسند</p>
                            <button>
                             <Image
-                                src={thumb}
                                 width={22}
                                 height={26}
                                 alt="Picture of the author"
@@ -55,7 +51,6 @@ function AllComments() {
                            <p className="text-[10px]">حذف</p>
                            <button>
                             <Image
-                                src={Close}
                                 width={22}
                                 height={26}
                                 alt="Picture of the author"

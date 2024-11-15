@@ -2,9 +2,6 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
-import SignOut from "../../../../assets/userPanel/Sign_out_squre.png"
-import Info from "../../../../assets/Modul/Info.png"
-import ModalDelete from "./ModalDelete"
 
 
 function ModalButton() {

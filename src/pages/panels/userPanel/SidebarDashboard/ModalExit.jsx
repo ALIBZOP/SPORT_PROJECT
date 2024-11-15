@@ -2,8 +2,6 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
-import SignOut from "../../../../assets/userPanel/Sign_out_squre.png"
-import Info from "../../../../assets/Modul/Info.png"
 
 
 function ModalExit() {
@@ -13,7 +11,6 @@ function ModalExit() {
     <>
      <Button className="absolute top-[623px] right-[18px] text-sm bg-[#66B10B]/0 text-black" onPress={onOpen}>
       <Image
-        src={SignOut}
         width={24}
         height={18}
         alt="Sign Out"
@@ -51,7 +48,6 @@ function ModalExit() {
             <>
               <ModalHeader className="flex flex-col justify-center gap-1 mt-[20px]">
                 <Image 
-                    src={Info}
                     width={48}
                     height={48}
                     alt="Picture of the author"

@@ -2,18 +2,6 @@ import React from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import Header from "../../../../components/Header/Header"
-import { Avatar } from "@nextui-org/react"
-import UserBoxInactive from "../../../../assets/userPanel/User_box.png"
-import BasketInactive from "../../../../assets/userPanel/Basket.png"
-import OrderInactive from "../../../../assets/userPanel/Order.png"
-import UserScanInactive from "../../../../assets/userPanel/User_scan.png"
-import WalletInactive from "../../../../assets/userPanel/Wallet.png"
-import UserBoxActive from "../../../../assets/userPanel/User_box_fill.png"
-import BasketActive from "../../../../assets/userPanel/Basket_fill.png"
-import OrderActive from "../../../../assets/userPanel/Order_fill.png"
-import UserScanActive from "../../../../assets/userPanel/User_scan_fill.png"
-import WalletActive from "../../../../assets/userPanel/Wallet_fill.png"
-import ModalExit from "./ModalExit.jsx"
 import { useRouter } from 'next/router'
 
 const SidebarDashboard = () => {
@@ -35,7 +23,6 @@ const SidebarDashboard = () => {
           <div className="flex flex-col bg-[#66B10B]/20 w-[250px] h-[685px] rounded-xl gap-8">
             <div className="flex relative flex-col gap-2.5">
               <div className="flex flex-col items-center p-2 gap-2">
-                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" className="w-20 h-20 text-large" />
                 <p className="text-lg">ایلیا ملک زاده</p>
                 <p className="text-xs">۹۸۹۰۳۴۱۵۰۹۱۱+</p>
                 <div className="flex flex-row bg-white w-[130px] h-[32px] text-[#66B10B] text-[10px] rounded-md px-1 py-2 gap-3 items-center">
@@ -51,7 +38,6 @@ const SidebarDashboard = () => {
                     <Link key={item.id} href={item.href} passHref>
                       <div className={`flex flex-row items-center p-4 rounded cursor-pointer gap-2`}>
                         <Image
-                          src={isActive ? item.iconActive : item.iconInactive}
                           width={24}
                           height={18}
                           alt={item.name}
@@ -64,7 +50,6 @@ const SidebarDashboard = () => {
                 })}
               </div>
               <div className="flex flex-col px-12 border-b border-black/20 w-[210px] mr-[25px]"></div>
-                <ModalExit />
             </div>
           </div>
         </div>

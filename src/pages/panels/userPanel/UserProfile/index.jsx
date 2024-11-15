@@ -2,13 +2,6 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import SidebarDashboard from "../SidebarDashboard/SidebarDashboard";
-import Paper_fill from "../../../../assets/userPanel/Paper_fill.png"
-import Wallet_fill from "../../../../assets/userPanel/Wallet_fill.png"
-import Check_ring from "../../../../assets/userPanel/Check_ring.png"
-import ImageCard1 from "../../../../assets/userPanel/Image-Card1.jpg"
-import ImageCard2 from "../../../../assets/userPanel/Image-Card2.jpg"
-import ImageCard3 from "../../../../assets/userPanel/Image-Card3.jpg"
-import ModalButton from "./ModalButton"
 
 
 function UserProfile() {
@@ -30,7 +23,6 @@ function UserProfile() {
               <div className="flex flex-col items-center border-1 border-black/5 justify-center w-[340px] h-[208px] shadow-md rounded-3xl gap-8">
                 <div className="flex flex-row gap-4">
                   <Image
-                    src={Paper_fill}
                     width={24}
                     height={24}
                     alt="Picture of the author"
@@ -51,7 +43,6 @@ function UserProfile() {
                 <div className="flex flex-col items-center border-1 border-black/5 justify-center w-[340px] h-[208px] shadow-md rounded-3xl gap-8">
                   <div className="flex flex-row gap-4">
                     <Image
-                      src={Wallet_fill}
                       width={24}
                       height={24}
                       alt="Picture of the author"
@@ -78,7 +69,6 @@ function UserProfile() {
                    <div key={item.id} className="flex flex-row w-[730px] h-[180px] border-1 border-black/5 shadow-md mb-[25px] gap-8 px-4 py-4 rounded-3xl">
                     <div>
                       <Image
-                        src={item.image}
                         width={145}
                         height={135}
                         alt="Picture of the author"
@@ -99,14 +89,12 @@ function UserProfile() {
                         <div className="flex flex-row mr-[15px]">
                           <p className="flex items-center text-[#66B10B]">فعال</p>
                           <Image
-                            src={Check_ring}
                             width={26}
                             height={26}
                             alt="Picture of the author"
                             className="flex items-center"
                           />
                         </div>
-                      <ModalButton />
                     </div>
                   </div>
                 ))}

@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import UserImage from '../../../../assets/CommentsPage/comment-image.png'
-import Close from '../../../../assets/adminPanel/Close_round_fill.png'
-import Expand from '../../../../assets/adminPanel/Expand_left.png'
 
 const reservations = [
   {
@@ -52,7 +49,6 @@ const ReservationTable = () => {
           <Link href="" className="flex flex-row text-blue-600 gap-2">
               مشاهده همه
             <Image
-              src={Expand}
               width={22}
               alt="Picture of the author"
              />
@@ -75,7 +71,6 @@ const ReservationTable = () => {
               <tr key={reservation.id} className="text-sm">
               <td className="flex flex-row items-center text-[12px] py-2 text-center gap-4">
                 <Image
-                    src={UserImage}
                     width={28}
                     alt="Picture of the author"
                   />
@@ -91,7 +86,6 @@ const ReservationTable = () => {
                   {reservation.cancelable && (
                     <button className="text-blue-600">
                       <Image
-                        src={Close}
                         width={20}
                         alt="Picture of the author"
                       />

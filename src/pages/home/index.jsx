@@ -1,10 +1,8 @@
 import React from 'react'
 import Image from "next/image" 
 import Link from "next/link";
-import Header from "../../components/Header/Header"
-import Footer from "../../components/Footer/Footer";
-import PhotoBaner from "../../assets/home/Image-baner.png"
-import IconBaner from "../../assets/home/Icon-baner.png"
+import Header from "../../components/Header/Header.tsx"
+import Footer from "../../components/Footer/Footer.tsx";
 import {Button} from "@nextui-org/react";
 
 
@@ -32,7 +30,7 @@ function home() {
                         >
                           <p>مشاهده همه سانس ها</p>
                             <Image 
-                              src={IconBaner}
+                              src="/path-to-your-image.jpg" 
                               width={40}
                               height={40}
                               alt="Picture of the author"
@@ -43,7 +41,6 @@ function home() {
                 </div>
                 <div className="justify-center absolute w-[600px] h-full top-[10px] right-[550px]">
                   <Image 
-                    src={PhotoBaner}
                     alt="Picture of the author"
                     className="h-[400px] w-[681px]"
                   />

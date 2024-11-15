@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import SidebarDashboard from '../SidebarDashboard/SidebarDashboard';
-import ImageCard1 from "../../../../assets/userPanel/Image-Card1.jpg"
 
 function Reservations() {
 
@@ -23,7 +22,6 @@ function Reservations() {
                    <div key={item.id} className="flex flex-row w-[730px] h-[180px] border-1 border-black/5 shadow-md mb-[12px] gap-8 px-4 py-4 rounded-3xl">
                     <div className="relative w-[145px] h-[135px]">
                       <Image
-                        src={item.image}
                         width={145}
                         height={135}
                         alt="Picture of the author"

@@ -1,11 +1,6 @@
 import React from 'react'
 import SidebarDashboardAdmin from '../SidebarDashboard/SidebarDashboard';
 import Image from "next/image";
-import AddRound from "../../../../assets/adminpanel/Add_round.png"
-import Image1 from "../../../../assets/adminpanel/image-1.png"
-import Image2 from "../../../../assets/adminpanel/image-2.png"
-import Image3 from "../../../../assets/adminpanel/image-3.png"
-import Edit from "../../../../assets/adminpanel/Edit.png"
 
 function Reservations() {
 
@@ -84,7 +79,6 @@ function Reservations() {
               <button className="flex flex-row items-center justify-center text-white bg-[#0072BB] w-[110px] h-[40px] gap-1 rounded-full border-1 border-[#0072BB]">
                 <p className="text-[12px]">افزودن سالن</p>
                   <Image
-                      src={AddRound}
                       width={15}
                       height={25}
                       className="rounded-full"
@@ -103,7 +97,6 @@ function Reservations() {
                       <div className="flex flex-col gap-2">
                         <div>
                           <Image
-                            src={item.originalphoto}
                             width={140}
                             height={25}
                             className="rounded-2xl"
@@ -111,13 +104,11 @@ function Reservations() {
                         </div>
                         <div className="flex flex-row gap-5">
                           <Image
-                            src={item.photo1}
                             width={60}
                             height={25}
                             className="rounded-2xl"
                           />
                           <Image
-                            src={item.photo2}
                             width={60}
                             height={25}
                             className="rounded-2xl"
@@ -141,7 +132,6 @@ function Reservations() {
                           <button className="flex items-center justify-center w-[60px] h-[24px] text-[10px] text-[#0072BB] border-1 border-[#0072BB] gap-1 rounded-full">
                             <p>ویرایش</p>
                             <Image
-                              src={Edit}
                               width={10}
                               height={25}
                             />

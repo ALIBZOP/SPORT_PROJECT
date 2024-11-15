@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from "next/image";
 import commentImage from "../../../../../assets/CommentsPage/comment-image.png"
-import Close from "../../../../../assets/adminpanel/Close.png"
-import thumb from "../../../../../assets/adminpanel/thumb_up.png"
 
 const DataComments= [
     {id: 1, image: commentImage, name: "محمود", hour: "۱۲.۳۶AM", date: "۱۴۰۳/۰۸/۱۳", comments: "واقعا سالن تمیز و بزرگی بود و م چی عالی بود ممنون از خدمات خوبتون" },
@@ -21,7 +19,6 @@ function UnverifiedComments() {
                 <div className="flex flex-row gap-2">
                     <div>
                         <Image
-                            src={item.image}
                             width={56}
                             height={26}
                             alt="Picture of the author"
