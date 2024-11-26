@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-const Footer: React.FC = () =>{
+const Footer: React.FC = () => {
   return (
     <>
       <div className="flex bg-white justify-center w-[1439px]">
