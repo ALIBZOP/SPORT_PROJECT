@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Header: React.FC = () => {
+type HeaderProps = React.PropsWithChildren<{}>;
+
+const Header: React.FC<HeaderProps> = ({ children }) => {
   return (
     <>
-      <div className="flex flex-row z-20 px-8 py-2 sm:px-8 sm:py-5 justify-between flex-wrap w-[1400px] h-[50px] sm:h-[80px] fixed bg-white">
+      <div className="flex flex-row z-20 px-8 py-5 justify-between bg-[#52cc99] flex-wrap w-[1400px] h-[80px] fixed ">
         <div className="mr-5">
           <Link href="/">
               <Image
@@ -12,24 +14,24 @@ const Header: React.FC = () => {
                 width={48} 
                 height={48}
                 src="/path-to-your-image.jpg" 
-                className="w-[30px] sm:w-[48px] h-[30px] sm:h-[48px]"
+                className="w-[48px] h-[48px]"
               />
           </Link>
         </div>
-        <div className="flex justify-center IRANSans-web">
-          <ul className="flex flex-row gap-6 sm:gap-16 p-2">
+        <div className="flex justify-center">
+          <ul className="flex flex-row text-white gap-6 sm:gap-16 p-2">
             <li>
-              <Link className="text-[10px] sm:text-sm/[16px] hover:text-[#66B10B]" href="/" passHref>
+              <Link className="text-[16px]" href="/" passHref>
                 خانه
               </Link>
             </li>
             <li>
-              <Link className="text-[10px] sm:text-sm/[16px] hover:text-[#66B10B]" href="/contactUs" passHref>
+              <Link className="text-[16px]" href="/contactUs" passHref>
                 تماس با ما
               </Link>
             </li>
             <li>
-              <Link className="text-[10px] sm:text-sm/[16px] hover:text-[#66B10B]" href="/aboutUs" passHref>
+              <Link className="text-[16px]" href="/aboutUs" passHref>
                 درباره ما
               </Link>
             </li>
@@ -54,11 +56,12 @@ const Header: React.FC = () => {
                   width={48} 
                   height={48}
                   src="/path-to-your-login-image.jpg" 
-                  className="w-[16px] sm:w-[24px] h-[16px] sm:h-[24px] ml-[15px]"
+                  className="w-[24px] h-[24px] ml-[15px]"
                 />
             </Link>
           </div>
         </div>
+        {children}
       </div>
     </>
   );

@@ -2,79 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-home-image {
-    background-image: url('/image/background-image-baner.jpg');
-    background-size: cover;
-    background-position: center;
-}
-  
-
-.bg-about-image {
-    background-image: url('/image/about-baner-image.png');
-    background-size: cover;
-    background-position: center;
-}
-
 @layer base {
   body {
-    font-family: IRANSans-Medium-web;
+    font-family: MyCustomFont;
   }
 }
 
 @font-face {
-  font-family: "IRANSans-web";
-  font-weight: 800;
-  src: url("/fonts/IRANSans-web.ttf");
+  font-family: 'MyCustomFont';
+  src: url('../assets/fonts/IRANSans-UltraLight-web.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "FreeSans";
-  font-weight: 500;
-  src: url("/fonts/FreeSans.ttf");
+* {
+  font-family: 'MyCustomFont';
 }
 
-@font-face {
-  font-family: "FreeSansBold";
-  font-weight: 600;
-  src: url("/fonts/FreeSansBold.ttf");
-}
-    
-@font-face {
-  font-family: "IranNastaliq";
-  font-weight: 700;
-  src: url("/fonts/IranNastaliq.ttf");
-}
- 
-@font-face {
-  font-family: "IRANSans-Bold-web";
-  font-weight: 800;
-  src: url("/fonts/IRANSans-Bold-web.ttf");
-}
- 
-@font-face {
-  font-family: "IRANSans-Light-web";
-  font-weight: 900;
-  src: url("/fonts/IRANSans-Light-web.ttf");
-}
- 
-@font-face {
-  font-family: "IRANSans-Medium-web";
-  font-weight: 1000;
-  src: url("/fonts/IRANSans-Medium-web.ttf");
-}
- 
-@font-face {
-  font-family: "IRANSans-UltraLight-web";
-  font-weight: 1100;
-  src: url("/fonts/IRANSans-UltraLight-web.ttf");
-}
- 
-@font-face {
-  font-family: "Shabnam";
-  font-weight: 1100;
-  src: url("/fonts/Shabnam.ttf");
-}
- 
 @layer utilities {
   .no-spinner {
     &::-webkit-outer-spin-button,
@@ -84,7 +28,6 @@
     }
   }
 }
-
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
     scrollbar-width: thin;
@@ -118,37 +61,4 @@
   .custom-scrollbar-basketBuy::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-  }
-
-
-  .custom-scrollbar-admin {
-    scrollbar-width: thin;
-    scrollbar-color: #ffffff #0072BB;
-  }
-
-  .custom-scrollbar-admin-User::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  .custom-scrollbar-admin-User::-webkit-scrollbar-thumb {
-    background-color: #0072BB;
-    border-radius: 50px;
-  }
-  
-  .custom-scrollbar-admin-User::-webkit-scrollbar-track {
-    background-color: #ffffff;
-    border-radius: 50px;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #66B10B;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #EDF2F7;
   }

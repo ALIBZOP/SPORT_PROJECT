@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body dir="rtl" claasName="font-IRANSans-web">
+      <body dir="rtl" className='MyCustomFont'>
         <Main />
         <NextScript />
       </body>

@@ -1,11 +1,31 @@
 import Link from "next/link"
 import Image from "next/image"
+import Lottie from "lottie-react";
+import animationData from "../../assets/lottie/footer/Animation - 1731601555340.json";
 
 const Footer: React.FC = () => {
   return (
     <>
-      <div className="flex bg-white justify-center w-[1439px]">
-        <div className="flex flex-row justify-center bg-white w-[1200px] my-[35px] border-2 border-y-[#66B10B] border-x-white py-14 gap-44 ">
+      <div className="flex relative overflow-visible justify-center h-full w-full">
+        <div className="flex flex-col items-center h-auto w-[400px]">
+          <div className="flex relative w-[400px]">
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              style={{width: 2000, height: "auto", transformOrigin: "center",transform: "scalex(3.5)", objectFit: "contain",maxHeight: "none",}}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-[#52cc99] h-[300px] w-[1400px]">
+
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+export default Footer;
+
+         {/* <div className="flex flex-row z-100 justify-center w-[1200px] border-2 py-14 gap-44 ">
             <div className="flex flex-col gap-6 w-[440px]">
               <div>
                 <Image 
@@ -25,7 +45,7 @@ const Footer: React.FC = () => {
                   <div>
                     <input className="focus:outline-none no-spinner" type="number" placeholder="شماره تماس"/>
                     <button type="submit" className="absolute text-white border-solid border-2 p-3
-                      border-[#66B10B] rounded-full bg-[#66B10B]  w-[100px] inset-y-0 -left-[2px] "> تایید </button>
+                      border-[#66B10B] rounded-full bg-[#66B10B] w-[100px] inset-y-0 -left-[2px] "> تایید </button>
                   </div>
                 </form>
               </div>
@@ -72,11 +92,4 @@ const Footer: React.FC = () => {
                   <p className="text-sm/[16px]">gmail.com</p>
               </div>
             </div>
-        </div>
-      </div>
-
-    </>
-  )
-}
-
-export default Footer;
+        </div>  */}
