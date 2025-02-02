@@ -1,12 +1,13 @@
-import {NextUIProvider} from '@nextui-org/react'
+import localFont from 'next/font/local'
 import "../styles/globals.css"
 
-function MyApp({ Component, pageProps }) {
+const myFont = localFont({ src: '../assets/fonts/IRANSans-Medium-web.ttf' })
+
+
+export default function MyApp({ Component, pageProps }) {
   return (
-    <NextUIProvider>
+    <main className={myFont.className}>
         <Component {...pageProps} />
-    </NextUIProvider>
+    </main>
   )
 }
-
-export default MyApp;

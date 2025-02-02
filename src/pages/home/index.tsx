@@ -10,16 +10,16 @@ import animationData from "../../assets/lottie/page/Animation - 1731599360405.js
 const Home: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col items-center overflow-x-hidden gap-10">
+      <div className={`flex flex-col items-center overflow-x-hidden gap-10`}>
         <Header/>
           <div className="flex flex-row justify-center w-[1400px] h-[560px] text-[#52cc99] px-10 py-8 mt-[55px]">
             <div className="flex flex-row relative z-10 text-[#52cc99] p-8 gap-[300px]">
               <div className="flex flex-col justify-center w-[400px] gap-20">
                 <div>
-                  <h1 className="text-6xl w-full">همین الان رزرو کن</h1>
+                  <h1 className="text-4xl w-full">همین الان رزرو کن</h1>
                 </div>
                 <div>
-                  <p className="text-lg/[26px]">باشگاه فوتینو با بالا ترین امکنات روز دنیا و با رعایت نکات بهداشتی همواره در تلاش است بهترین خدمات را به شما ارائه دهد</p>
+                  <p className="text-sm/[26px]">باشگاه فوتینو با بالا ترین امکنات روز دنیا و با رعایت نکات بهداشتی همواره در تلاش است بهترین خدمات را به شما ارائه دهد</p>
                 </div>
                 <div>
                   <Link href="/conditionHall" passHref>

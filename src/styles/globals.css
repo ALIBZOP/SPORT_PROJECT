@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    font-family: MyCustomFont;
-  }
-}
-
-@font-face {
-  font-family: 'MyCustomFont';
-  src: url('../assets/fonts/IRANSans-UltraLight-web.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-* {
-  font-family: 'MyCustomFont';
-}
 
 @layer utilities {
   .no-spinner {
